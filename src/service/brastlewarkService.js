@@ -11,7 +11,6 @@ async function brastlewarkService(page) {
       pageNumber: page
     };
     const { data } = await api.post("/", paginationObj);
-    console.log(data);
     return data;
   } catch (e) {
     console.log(e);
